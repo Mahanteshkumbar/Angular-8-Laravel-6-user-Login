@@ -35,6 +35,7 @@ It is a full Laravel project that you should use as a starter project and implem
 
 # Register with server errors
 ![picture alt](https://github.com/Mahanteshkumbar/Angular-8-Laravel-6-user-Login/blob/master/screenshots/register.png)
+![picture alt](https://github.com/Mahanteshkumbar/Angular-8-Laravel-6-user-Login/blob/master/screenshots/server%20errors%20register.png)
 
 # Dashboard and Token 
 ![picture alt](https://github.com/Mahanteshkumbar/Angular-8-Laravel-6-user-Login/blob/master/screenshots/dashbosr%20token.png)
