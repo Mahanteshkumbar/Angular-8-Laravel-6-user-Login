@@ -1,0 +1,58 @@
+<div class="row" *ngIf="route.children.length === 0">
+    <div class="col-md-12">
+            <h4 class="remove-margin"> Users Detail </h4>
+      <div class="card">
+        <div class="card-header">          
+          <!-- <div class="float-right"> -->                
+            <a routerLink="/users/create" class="btn btn-info btn-sm">Add New</a>
+          <!-- </div> -->
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead class="text-primary">
+                <th>
+                  SL No.
+                </th>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Email
+                </th>
+                <th>
+                  Action
+                </th>               
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of userList">
+                  <td>
+                      {{ row.id }}
+                  </td>
+                  <td>
+                      {{ row.name }}
+                  </td>
+                  <td>
+                      {{ row.email }}
+                  </td>
+                  <td>
+                    <div>
+                        <a (click)="editUser(row.id)"  class="btn btn-warning btn-sm">Edit</a>
+                        &nbsp;
+                        <a (click)="deleteUser(row.id)" class="btn btn-danger btn-sm">Delete</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <router-outlet></router-outlet>
+    </div>
+</div>

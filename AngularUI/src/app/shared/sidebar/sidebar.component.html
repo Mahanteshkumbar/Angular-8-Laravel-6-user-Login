@@ -1,0 +1,46 @@
+
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a href="#" class="simple-text logo-mini">
+      <div class="logo-image-small">
+        <img src="assets/img/angular2-logo.png">
+      </div>
+    </a>
+    <a href="#" class="simple-text logo-normal">
+      Dashboard
+    </a>
+  </div>
+    <ul class="nav">
+        <!-- <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+            <a [routerLink]="[menuItem.path]">
+                <i class="nc-icon {{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li> -->
+
+        <li *ngFor="let menuItem of menuItems; let i = index" routerLinkActive="active" class="{{menuItem.class}}">
+          <a *ngIf="menuItem.childMenu" data-toggle="collapse" href="#dashboardOverview{{i}}" aria-expanded="false" class="collapsed">
+              <i class="nc-icon nc-bank"></i>
+              <p>{{menuItem.title}}
+                    <b class="caret"></b>
+                </p>
+          </a>
+          <a *ngIf="!menuItem.childMenu" [routerLink]="[menuItem.path]">
+            <i class="nc-icon {{menuItem.icon}}"></i>
+            <p>{{menuItem.title}}</p>
+          </a>
+
+        <div *ngIf="menuItem.childMenu" class="collapse" id="dashboardOverview{{i}}" aria-expanded="false" style="height: 0px;">
+          <ul class="nav">
+            <li *ngFor="let menu of menuItem.childMenu" routerLinkActive="active" class="{{menu.class}}">
+              <a [routerLink]="[menu.path]">
+                  <i class="nc-icon {{menu.icon}}"></i>
+                  <p>{{menu.title}}</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+</div>

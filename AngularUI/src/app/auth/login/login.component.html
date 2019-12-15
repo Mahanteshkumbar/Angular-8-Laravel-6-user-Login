@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title text-center">Login</h5>
+                <small id="emailHelp" class="form-text text-muted" *ngIf="serverErrors">{{ serverErrors.error }}</small>
+                <hr>
+              </div>
+              <div class="card-body">
+                <form [formGroup]="loginForm" (ngSubmit)="login()">  
+                                                              
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>User Name</label>
+                        <input type="text" formControlName="email" class="form-control" placeholder="Email">
+                      </div>
+
+                      <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                              class="form-text text-muted">
+                            <div *ngIf="email.errors?.required">
+                              Email is required.
+                            </div>
+                            <div *ngIf="email.errors?.email">
+                              Invalid email address.
+                            </div>
+                      </div> 
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Password</label>
+                        <input type="password" formControlName="password" class="form-control" placeholder="Password">
+                      </div>
+
+                      <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                              class="form-text text-muted">
+                            <div *ngIf="password.errors?.required">
+                              password is required.
+                            </div>
+                            <div *ngIf="password.errors?.minlength">
+                              Password must be 5 charcter long
+                            </div>
+                      </div>
+                    </div>
+                  </div>          
+
+                  <div class="row">
+                    <div class="update ml-auto mr-auto">
+                      <button type="submit" [disabled] = "!loginForm.valid" class="btn btn-primary btn-round">Login</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+</div>
