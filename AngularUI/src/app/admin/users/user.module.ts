@@ -11,7 +11,7 @@ import { UserRestService } from './user-rest.service';
   declarations: [UserIndexComponent, UserCreateComponent],
   imports: [
     CommonModule,
-    UserRoutingModule    
+    UserRoutingModule
   ],
   providers: [
     UserRestService

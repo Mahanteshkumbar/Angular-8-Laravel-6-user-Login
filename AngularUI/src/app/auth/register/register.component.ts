@@ -3,6 +3,7 @@ import { NgForm, FormsModule, FormGroup, FormControl, Validators } from '@angula
 import { CommonAuthService } from '../common-auth.service';
 import { error } from '@angular/compiler/src/util';
 import { HttpErrorResponse } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -12,7 +13,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup
   serverErrors = [];
-  constructor(private auth: CommonAuthService) { }
+  constructor(private auth: CommonAuthService, private route: Router) { }
 
   ngOnInit() {
     this.registerForm = new FormGroup({
@@ -31,6 +32,8 @@ export class RegisterComponent implements OnInit {
   registerUser(){
     this.auth.registerUser(this.registerForm).subscribe(success => {
       //console.log(success);
+      this.route.navigate(['home/login']);
+
     },error => { 
         //console.log(error);
         this.serverErrors = error.error.errors;

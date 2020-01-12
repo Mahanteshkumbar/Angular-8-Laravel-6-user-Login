@@ -1,0 +1,97 @@
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/roles/role-create/role-create.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/roles/role-create/role-create.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/roles/role-index/role-index.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/roles/role-index/role-index.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/roles/role-rest.service.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/roles/role-routing.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/roles/role.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/users/user-create/user-create.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/users/user-index/user-index.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/users/user-index/user-index.component.spec.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/users/user-index/user-index.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/users/user-rest.service.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/users/user-routing.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/admin/users/user.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/app.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/app.component.spec.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/app.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/app.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/app.routing.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth-guard.service.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/auth-guard.service.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/common-auth-routing.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/common-auth.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/common-auth.service.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/forgot-password/forgot-password.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/forgot-password/forgot-password.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/login/login.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/login/login.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/register/register.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/auth/register/register.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/admin-layout/admin-layout.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/admin-layout/admin-layout.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/admin-layout/admin-layout.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/admin-layout/admin-layout.routing.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/welcome-layout/welcome-layout-routing.routing.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/welcome-layout/welcome-layout.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/welcome-layout/welcome-layout.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/layouts/welcome-layout/welcome-layout.module.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/dashboard/dashboard.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/dashboard/dashboard.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/icons/icons.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/icons/icons.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/maps/maps.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/maps/maps.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/notifications/notifications.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/notifications/notifications.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/table/table.component.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/table/table.component.ts.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in AngularUI/src/app/pages/typography/typography.component.htm

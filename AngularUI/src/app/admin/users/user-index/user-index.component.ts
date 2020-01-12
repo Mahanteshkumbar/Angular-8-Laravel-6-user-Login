@@ -13,7 +13,10 @@ export class UserIndexComponent implements OnInit {
   constructor(private route: ActivatedRoute, private userRest: UserRestService) { }
 
   ngOnInit() {
-    this.userList = this.userRest.getUsers();
+     this.userRest.getUsers().subscribe(
+     (response) => { console.log(this.userList = response.user); },
+     (error) => { console.log(error) }
+    );
   }
 
   deleteUser(id: number) {

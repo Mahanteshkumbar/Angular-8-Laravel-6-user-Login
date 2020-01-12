@@ -21,7 +21,11 @@ Route::group(['middleware' => ['cors'], 'namespace' => 'Auth'], function () {
 });
 
 Route::group(['middleware' => ['cors','auth:api'], 'namespace' => 'Auth'], function () {
-    Route::post('logout', 'PassportController@logout');    
+    Route::post('logout', 'PassportController@logout'); 
+});
+
+Route::group(['middleware' => ['cors','auth:api'], 'namespace' => 'Admin'], function () {
+    Route::resource('user-list', 'UserListController');
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
