@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserRestService } from '../user-rest.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { UserRestService } from '../user-rest.service';
 export class UserIndexComponent implements OnInit {
   userList: Array<object> = [];
 
-  constructor(private route: ActivatedRoute, private userRest: UserRestService) { }
+  constructor(private route: ActivatedRoute, private userRest: UserRestService, private router: Router) { }
 
   ngOnInit() {
      this.userRest.getUsers().subscribe(
@@ -20,10 +20,15 @@ export class UserIndexComponent implements OnInit {
   }
 
   deleteUser(id: number) {
-    console.log(id);
+    if(confirm("Are you sure to delete ")) {
+      this.userRest.deleteUser(id).subscribe(
+        (response) => console.log(response),
+        (error) => console.log(error)
+      );
+    }
   }
 
   editUser(id: number) {
-    console.log(id);
+    this.router.navigate(['users/edit',id]);
   }
 }

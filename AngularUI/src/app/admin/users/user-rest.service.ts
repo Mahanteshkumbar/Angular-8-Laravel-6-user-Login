@@ -11,10 +11,21 @@ export class UserRestService {
 
   getUsers(): Observable<any> {
     return this.http.get('http://localhost/laravelAngularApi/public/api/user-list');
-    // return this.users = [
-    //   {id: 1, name: 'Mahantesh', email: 'mahantesh@m.com'},
-    //   {id: 2, name: 'Mahantesh', email: 'mahantesh@m.com'},
-    //   {id: 3, name: 'Mahantesh', email: 'mahantesh@m.com'}
-    // ]
-  } 
+  }
+  
+  editUser(id): Observable<any> {
+    return this.http.get('http://localhost/laravelAngularApi/public/api/user-list/' + id);
+  }
+
+  updateUser(form,id): Observable<any> {
+    return this.http.put('http://localhost/laravelAngularApi/public/api/user-list/' + id, form.value);
+  }
+
+  storeUser(form): Observable<any> {
+    return this.http.post('http://localhost/laravelAngularApi/public/api/user-list',form.value);
+  }
+
+  deleteUser(id): Observable<any> {
+    return this.http.delete('http://localhost/laravelAngularApi/public/api/user-list/' + id);
+  }
 }

@@ -13,12 +13,12 @@ export class AuthInterceptor implements HttpInterceptor {
 
     if(token){
       headers = new HttpHeaders({
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8, application/json',
+        'Content-Type' : 'application/form-data; charset=UTF-8, application/json',
         'Authorization' : `Bearer ${token}`,
       });
     }else{
       headers = new HttpHeaders({
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8, application/json'
+        'Content-Type' : 'application/form-data; charset=UTF-8, application/json'
     });
     }
     const requestChange = req.clone({headers});
